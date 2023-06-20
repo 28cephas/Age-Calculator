@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--Light-grey);
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  background-color: var(--White);
+  padding: 3em;
+  border-radius: 1em 1em 5em 1em;
+}
+
+form {
+  display: flex;
+  gap: 0.5em;
+  margin-right: 5em;
+}
+
+label {
+  display: block;
+  font-size: smaller;
+  font-weight: 500;
+}
+
+input {
+  width: 5em;
+  height: 2.5em;
+  outline: none;
+  border: 1px solid var(--Light-grey);
+  border-radius: 0.5em;
+}
+
+input:focus {
+  border: 1px solid var(--Purple);
+}
+
+input[type='number'] {
+  font-weight: 800;
+  font-size: 16px;
+  padding-left: 0.4em;
+}
+
+.display {
+  font-size: 32px;
+}
+
+.word {
+  font-size: x-small;
+  color: var(--Light-red);
+}
+
+span {
+  color: var(--Purple);
+}
+
+.image {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+img {
+  background-color: var(--Purple);
+  border-radius: 50%;
+  padding: 0.5em;
+  margin: 0.7em 0;
+  width: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+img:hover,
+img:focus {
+  background-color: var(--Off-black);
+}
+
+.empty {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: var(--Light-grey);
+  position: absolute;
+  top: 50%;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 2em 0;
+  }
+}

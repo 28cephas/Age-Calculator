@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="#" class="form">
+        <div>
+          <label for="day" class="label lDay">DAY</label>
+          <input type="number" minlength="1" maxlength="2" class="input-day" />
+          <p class="word-day word"></p>
+        </div>
+
+        <div>
+          <label for="month" class="label lMonth">MONTH</label>
+          <input
+            type="number"
+            minlength="1"
+            maxlength="2"
+            class="input-month"
+          />
+          <p class="word-month word"></p>
+        </div>
+
+        <div>
+          <label for="year" class="label lYear">YEAR</label>
+          <input type="number" minlength="4" maxlength="4" class="input-year" />
+          <p class="word-year word"></p>
+        </div>
+      </form>
+
+      <div class="image">
+        <div class="empty"></div>
+        <img src="images/icon-arrow.svg" alt="" />
+      </div>
+
+      <div class="display">
+        <div class="year">
+          <h2>
+            <span class="display-year">--</span>
+            years
+          </h2>
+        </div>
+
+        <div class="month">
+          <h2>
+            <span class="display-month">--</span>
+            months
+          </h2>
+        </div>
+
+        <div class="days">
+          <h2>
+            <span class="display-days">--</span>
+            days
+          </h2>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
